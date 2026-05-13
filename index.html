@@ -3,61 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>멍냥마켓 - 반려동물 쇼핑몰</title>
+    <title>AI Nexa | 미래를 앞당기는 AI 에이전트</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-
     <header>
-        <div class="container header-content">
-            <h1 class="logo">🐾 멍냥마켓</h1>
-            <nav>
-                <button id="cart-btn">
-                    <i class="fas fa-shopping-cart"></i> 장바구니
-                    <span id="cart-count">0</span>
-                </button>
-            </nav>
-        </div>
+        <nav>
+            <div class="logo">AI NEXA</div>
+            <ul>
+                <li><a href="#features">기능</a></li>
+                <li><a href="#about">소개</a></li>
+                <li><a href="#" class="btn-nav">시작하기</a></li>
+            </ul>
+        </nav>
     </header>
 
     <section class="hero">
-        <div class="hero-content container">
-            <div class="hero-text">
-                <h2>우리 아이를 위한<br>최고의 선택</h2>
-                <p>엄선된 프리미엄 사료와 장난감을 만나보세요.</p>
-            </div>
-            <div class="hero-image">
-                 <img src="https://images.unsplash.com/photo-1623387641168-d9803ddd3f35?w=500&h=350&fit=crop" alt="귀여운 강아지와 고양이">
-            </div>
+        <div class="hero-content">
+            <h1>당신의 상상을 <br><span class="highlight">현실로 만드는 AI</span></h1>
+            <p>단순한 챗봇을 넘어, 스스로 사고하고 행동하는 차세대 AI 에이전트를 경험하세요.</p>
+            <button id="cta-button">무료 체험하기</button>
         </div>
     </section>
 
-    <main class="container">
-        <div class="filters">
-            <button class="filter-btn active" data-filter="all">전체보기</button>
-            <button class="filter-btn" data-filter="dog">🐶 강아지</button>
-            <button class="filter-btn" data-filter="cat">🐱 고양이</button>
+    <section id="features" class="features">
+        <div class="card">
+            <h3>자율적 워크플로우</h3>
+            <p>복잡한 작업도 단계별로 스스로 계획하고 실행합니다.</p>
         </div>
-
-        <div id="product-list" class="product-grid">
-            </div>
-    </main>
-
-    <div id="cart-modal" class="modal">
-        <div class="modal-content">
-            <span class="close-btn">&times;</span>
-            <h2>장바구니</h2>
-            <ul id="cart-items">
-                <p class="empty-msg">장바구니가 비어있습니다.</p>
-            </ul>
-            <div class="cart-total">
-                <span>총 결제금액:</span>
-                <span id="total-price">0원</span>
-            </div>
-            <button id="checkout-btn">주문하기</button>
+        <div class="card">
+            <h3>실시간 데이터 통합</h3>
+            <p>최신 정보를 실시간으로 검색하여 가장 정확한 답을 제공합니다.</p>
         </div>
-    </div>
+        <div class="card">
+            <h3>무한한 확장성</h3>
+            <p>API를 통해 당신이 사용하는 모든 도구와 연결됩니다.</p>
+        </div>
+    </section>
 
     <script src="script.js"></script>
 </body>
